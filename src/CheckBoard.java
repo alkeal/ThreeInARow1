@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class CheckBoard {
@@ -15,6 +16,9 @@ public class CheckBoard {
             {' ', '|', ' ', '|', ' '},
             {'-', '+', '-', '+', '-'},
             {' ', '|', ' ', '|', ' '}};
+
+
+
 
     public String winner(){
         // inputs the different ways you can win the game on the board

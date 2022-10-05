@@ -8,8 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-
         // starting message for the game
         System.out.println("*============================*");
         System.out.println("*============================*");
@@ -22,6 +20,8 @@ public class Main {
         String p1 = scanner.nextLine();
         System.out.println("Player 2 enter name:");
         String p2 = scanner.nextLine();
+
+
 
 
         {
@@ -129,35 +129,17 @@ public class Main {
 
         // switch for the different pos for the symbols on the board
         switch (pos) {
-            case 1:
-                checkboard.gameBoard[0][0] = symbol;
-                break;
-            case 2:
-                checkboard.gameBoard[0][2] = symbol;
-                break;
-            case 3:
-                checkboard.gameBoard[0][4] = symbol;
-                break;
-            case 4:
-                checkboard.gameBoard[2][0] = symbol;
-                break;
-            case 5:
-                checkboard.gameBoard[2][2] = symbol;
-                break;
-            case 6:
-                checkboard.gameBoard[2][4] = symbol;
-                break;
-            case 7:
-                checkboard.gameBoard[4][0] = symbol;
-                break;
-            case 8:
-                checkboard.gameBoard[4][2] = symbol;
-                break;
-            case 9:
-                checkboard.gameBoard[4][4] = symbol;
-                break;
-            default:
-                break;
+            case 1 -> checkboard.gameBoard[0][0] = symbol;
+            case 2 -> checkboard.gameBoard[0][2] = symbol;
+            case 3 -> checkboard.gameBoard[0][4] = symbol;
+            case 4 -> checkboard.gameBoard[2][0] = symbol;
+            case 5 -> checkboard.gameBoard[2][2] = symbol;
+            case 6 -> checkboard.gameBoard[2][4] = symbol;
+            case 7 -> checkboard.gameBoard[4][0] = symbol;
+            case 8 -> checkboard.gameBoard[4][2] = symbol;
+            case 9 -> checkboard.gameBoard[4][4] = symbol;
+            default -> {
+            }
         }
 
     }
